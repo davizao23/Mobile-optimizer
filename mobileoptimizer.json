@@ -1,0 +1,32 @@
+{
+  "geode": "4.6.3",
+  "gd": { "android": "2.2074", "win": "2.2074", "mac": "2.2074", "ios": "2.2074" },
+  "id": "seunome.mobile-optimizer",
+  "name": "Mobile Optimizer",
+  "version": "v1.0.0",
+  "developer": "SeuNome",
+  "description": "Melhora o desempenho no celular: limite de FPS, menos partículas e modo economia de bateria.",
+  "settings": {
+    "fps-limit": {
+      "type": "int",
+      "name": "Limite de FPS",
+      "description": "Limita os FPS para economizar bateria e reduzir aquecimento.",
+      "default": 60,
+      "min": 30,
+      "max": 240,
+      "control": { "slider": true }
+    },
+    "disable-particles": {
+      "type": "bool",
+      "name": "Desativar partículas (in-game)",
+      "description": "Esconde e para as partículas durante a fase.",
+      "default": true
+    },
+    "battery-saver": {
+      "type": "bool",
+      "name": "Modo economia de bateria",
+      "description": "Força o limite de FPS em 30.",
+      "default": false
+    }
+  }
+}
