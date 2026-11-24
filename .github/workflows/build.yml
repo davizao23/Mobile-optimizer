@@ -8,6 +8,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: geode-sdk/build-geode-mod@main
         with:
+          sdk: nightly
           combine: true
           target: Android64
       - uses: actions/upload-artifact@v4
